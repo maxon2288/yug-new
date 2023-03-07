@@ -1,0 +1,46 @@
+// Colors
+$white: #FFFFFF;
+$light-blue: #F2F6FB;
+$gray-blue-5: #F7F7F8;
+$gray-10: #F5F5F5;
+$gray-20: #EAEAEA;
+$gray-30: #E1E1E1;
+$gray-main: #D0D0D0;
+$gray: #8F9090;
+$black-60: #888888;
+$black-70: #404040;
+$black-80: #1E1E1E;
+$black: #000103;
+$main-dark-blue: #003154;
+$dark-blue-9: #174463;
+$hover-dark: #013D68;
+$hover-bright: #004F87;
+$pressed: #002641;
+$focused: #0085FF;
+$blue: #60C0C3;
+$green: #43B02A;
+$red: #F18D91;
+$yellow: #F5BD0B;
+
+// Font
+$font-weight-regular: 400;
+$font-weight-semi-bold: 600;
+
+// Breakpoints
+$breakpoint-xlarge-max: 1929.98px;
+$breakpoint-large-max: 1599.98px;
+$breakpoint-medium-max: 1199.98px;
+$breakpoint-small-max: 959.98px;
+$breakpoint-xsmall-max: 639.98px;
+
+
+// Base
+$font-family: 'Golos', sans-serif;
+$global-font-family: $font-family;
+$global-line-height: 1.48;
+$global-link-color: $black-80;
+$base-body-font-size: 15px;
+$base-link-hover-color: $hover-bright;
+$base-link-hover-text-decoration: none;
+$base-body-background: $white;
+$base-body-color: $black;

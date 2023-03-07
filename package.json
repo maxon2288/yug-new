@@ -1,0 +1,33 @@
+{
+  "name": "gulp-frontend",
+  "version": "1.1.1",
+  "description": "Cult front-end template",
+  "author": "nerdyfeed",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "#"
+  },
+  "dependencies": {
+    "browser-sync": "*",
+    "gsap": "^3.10.2",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-cssmin": "*",
+    "gulp-file-include": "^2.3.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "*",
+    "gulp-rigger": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify-es": "*",
+    "gulp-version-number": "^0.2.4",
+    "gulp-watch": "*",
+    "jquery": "^3.6.0",
+    "line-clamp": "^1.0.0",
+    "rimraf": "*",
+    "sass": "*",
+    "swiper": "^8.1.0",
+    "uikit": "*"
+  }
+}

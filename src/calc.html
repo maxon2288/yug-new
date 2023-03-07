@@ -1,0 +1,272 @@
+@@include('template/head.html')
+<div class="section dark-section uk-overflow-hidden section-calc dark-section-first">
+    <div class="uk-container">
+        <div class="page-heading">
+            <div class="uk-width-1-2@m">
+                <h1 class="uk-h1 uk-text-break">Расчет стоимости ремонта</h1>
+                <div class="page-heading-desc">
+                    Для вашего удобства мы создали специальный сервис, который поможет в три простых шага определить
+                    проблему и предложить возможное решение и расчет стоимости работ.
+                </div>
+                <div class="block-info">
+                    <div class="block-info-icon">
+                        <img width="16" height="16" src="img/new-repair/icons/ruble-icon.svg" alt="#">
+                    </div>
+                    <div class="block-info-title">Цену можно узнать, оставив заявку на сайте</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="section-img" style="background-image: url('/img/new-repair/background/section-calc.png')"></span>
+</div>
+<div class="section dark-section section-categories">
+    <div class="uk-container">
+        <div class="repair-selectors">
+            <h2 class="uk-flex uk-flex-middle">
+                <span class="hading-number">1</span>
+                <span class="uk-margin-left">Выберите категорию</span>
+            </h2>
+            <div class="uk-child-width-1-3@m uk-child-width-1-2@s uk-child-width-1-1 calc-categories" data-uk-grid
+                 data-uk-height-match="label">
+                <div>
+                    <div>
+                        <input type="radio" name="calc-category" data-id="0" id="calc-category-0" checked>
+                        <label for="calc-category-0" class="uk-button uk-width-1-1 uk-button-default first-btn">
+                            <img width="32" height="32" src="img/new-repair/repair/types/refrigerator.svg" data-uk-svg>
+                            <span>Авторефрижераторы</span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <input type="radio" name="calc-category" data-id="1" id="calc-category-1">
+                        <label for="calc-category-1" class="uk-button uk-width-1-1 uk-button-default first-btn">
+                            <img width="32" height="32" src="img/new-repair/repair/types/conditioner.svg" data-uk-svg>
+                            <span>Автокондиционеры</span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <input type="radio" name="calc-category" data-id="2" id="calc-category-2">
+                        <label for="calc-category-2" class="uk-button uk-width-1-1 uk-button-default first-btn">
+                            <img width="32" height="32" src="img/new-repair/repair/types/heater.svg" data-uk-svg>
+                            <span>Отопители</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-margin-xlarge-top happened-section">
+                <h2 class="uk-flex uk-flex-middle">
+                    <span class="hading-number">2</span>
+                    <span class="uk-margin-left">Что случилось?</span>
+                </h2>
+                <div class="uk-text-center uk-child-width-1-3@m uk-child-width-1-1 calc-happened uk-grid"
+                     data-uk-grid="" data-uk-height-match="label">
+                    <div class="uk-first-column">
+                        <div>
+                            <input type="radio" name="calc-happened" data-id="0" id="calc-happened-0">
+                            <label for="calc-happened-0" class="uk-button uk-width-1-1 uk-button-default second-btn">
+                                Шум в области компрессора A/C</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="radio" name="calc-happened" data-id="1" id="calc-happened-1">
+                            <label for="calc-happened-1" class="uk-button uk-width-1-1 uk-button-default second-btn">
+                                Не включается компрессор</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="radio" name="calc-happened" data-id="2" id="calc-happened-2">
+                            <label for="calc-happened-2" class="uk-button uk-width-1-1 uk-button-default second-btn">
+                                Слабое охлаждение салона автомобиля</label>
+                        </div>
+                    </div>
+                    <div class="uk-grid-margin uk-first-column">
+                        <div>
+                            <input type="radio" name="calc-happened" data-id="3" id="calc-happened-3">
+                            <label for="calc-happened-3" class="uk-button uk-width-1-1 uk-button-default second-btn">
+                                Неприятный запах при включении A/C</label>
+                        </div>
+                    </div>
+                    <div class="uk-grid-margin">
+                        <div>
+                            <input type="radio" name="calc-happened" data-id="4" id="calc-happened-4">
+                            <label for="calc-happened-4" class="uk-button uk-width-1-1 uk-button-default second-btn">
+                                Произвольное отключение компрессора, нестабильная работа системы A/C</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-margin-xlarge-top malfunctions-section">
+                <h2 class="uk-flex uk-flex-middle">
+                    <span class="hading-number">3</span>
+                    <span class="uk-margin-left">Возможные неисправности</span>
+                </h2>
+                <div class="uk-child-width-1-3@m uk-child-width-1-1 uk-text-center calc-malfunctions uk-grid"
+                     data-uk-grid="" data-uk-height-match="label">
+                    <div class="uk-first-column">
+                        <div>
+                            <input type="radio" name="calc-malfuncions" data-id="0" id="calc-malfuncions-0">
+                            <label for="calc-malfuncions-0" class="uk-button uk-width-1-1 uk-button-default second-btn">
+                                Подшипник шкива компрессора A/C</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="radio" name="calc-malfuncions" data-id="1" id="calc-malfuncions-1">
+                            <label for="calc-malfuncions-1" class="uk-button uk-width-1-1 uk-button-default second-btn">
+                                Натяжной ролик или обводной</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="section uk-padding-remove-top">
+    <div class="uk-container">
+        <div class="calc-content">
+            <div class="calc-content-heading">Где находится:</div>
+            <p class="uk-margin-small">В передней части компрессора расположен узел,
+                который называется муфта компрессора. Муфта компрессора бывает двух видов: постоянного вращения и с
+                прижимной пластиной. Муфта постоянного вращения состоит из срывной пластины, шкива, подшипника.
+                Муфта с прижимной пластиной состоит из шкива, подшипника, электромагнитной муфты, прижимной
+                пластины.</p>
+            <div class="mt-40">
+                <div class="calc-content-heading">Функции:</div>
+                <p class="uk-margin-small">Вращение шкива компрессора</p>
+            </div>
+            <div class="mt-40">
+                <div class="calc-content-heading">Причины поломки:</div>
+                <p class="uk-margin-small">Подшипник компрессора находится под постоянной
+                    нагрузкой, все то время, что двигатель запущен, даже если компрессор не используется, он вращается.
+                    Из-за этого он является одним из самых уязвимых элементов. Он может выйти из строя, если ремень
+                    натянут слишком туго, при попадании грязи, воды на компрессор, либо из-за естественного износа,
+                    перегрева.</p>
+            </div>
+            <div class="section uk-padding-remove-bottom">
+                <div class="calc-content-heading uk-margin-medium-bottom">
+                    Перечень работ с демонтажем компрессора:
+                </div>
+                <div class="uk-child-width-1-2@m" data-uk-grid="margin: mt-40" data-uk-height-match="target: .match-grid">
+                    <div>
+                        <ul class="price-list-items match-grid">
+                            <li>
+                                <div class="price-item-title">Диагностика системы автокондиционирования (грузовые
+                                    автомобили)
+                                </div>
+                            </li>
+                            <li>
+                                <div class="price-item-title">Изготовление алюминиевой магистрали кондиционера (включая
+                                    расходные материалы)
+                                </div>
+                            </li>
+                            <li>
+                                <div class="price-item-title">Промывка системы кондиционирования (без ТРВ
+                                    и испарителя/конденсатора))
+                                </div>
+                            </li>
+                            <li>
+                                <div class="price-item-title">Монтаж-демонтаж крышки наружного блока кондиционера
+                                    (подвесного испарителя/конденсатора)
+                                </div>
+                            </li>
+                            <li>
+                                <div class="price-item-title">Изготовление алюминиевой магистрали кондиционера (включая
+                                    расходные материалы)
+                                </div>
+                            </li>
+                            <li>
+                                <div class="price-item-title">Диагностика системы автокондиционирования (грузовые
+                                    автомобили)
+                                </div>
+                            </li>
+                            <li>
+                                <div class="price-item-title">Изготовление алюминиевой магистрали кондиционера (включая
+                                    расходные материалы)
+                                </div>
+                            </li>
+                            <li>
+                                <div class="price-item-title">Промывка системы кондиционирования (без ТРВ
+                                    и испарителя/конденсатора))
+                                </div>
+                            </li>
+                            <li>
+                                <div class="price-item-title">Монтаж-демонтаж крышки наружного блока кондиционера
+                                    (подвесного испарителя/конденсатора)
+                                </div>
+                            </li>
+                            <li>
+                                <div class="price-item-title">Изготовление алюминиевой магистрали кондиционера (включая
+                                    расходные материалы)
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="form-signup match-grid">
+                            <div class="form-signup-title">Получить расчет стоимости ремонта с выбранными опциями</div>
+                            <div class="form-signup-desc">Наш специалист перезвонит вам для согласования даты
+                                и стоимости
+                                ремонта
+                            </div>
+                            <form class="form-signup-form" action="#">
+                                <div data-uk-margin="margin: uk-margin-top">
+                                    <div class="uk-width-expand@s">
+                                        <div class="dark-input type-name">
+                                            <input class="uk-width-1-1 uk-input" type="text" placeholder="Имя"
+                                                   name="firstname"
+                                                   required>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-expand@s">
+                                        <div class="dark-input type-phone">
+                                            <input class="uk-width-1-1 uk-input" type="tel" placeholder="Номер телефона"
+                                                   name="phone" required data-input-check="phone">
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-auto@m margin-medium-m">
+                                        <button class="uk-button uk-button-primary uk-width-1-1 callback-form-button uk-margin-medium-top"
+                                                type="submit">
+                                            Отправить заявку
+                                        </button>
+                                    </div>
+                                    <div class="uk-margin-top text-small">Нажимая на кнопку «Отправить заявку», вы даете
+                                        согласие на обработку персональный данных
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section dark-section uk-overflow-hidden repair-section secondary">
+    <div class="uk-container">
+        <div class="heading heading-2 c-black uk-position-relative">Ремонт оборудования и сервис</div>
+        <div class="overflow-visible mt-40" data-uk-slider="finite: true">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                <ul class="uk-slider-items" data-uk-grid>
+                    <li class="uk-width-1-3@m uk-width-auto@s uk-width-5-6">
+                        @@include('template/service-card.html', { "title": "Авторефрежираторов" })
+                    </li>
+                    <li class="uk-width-1-3@m uk-width-auto@s uk-width-5-6">
+                        @@include('template/service-card.html', { "title": "Aвтокондиционеров" })
+                    </li>
+                    <li class="uk-width-1-3@m uk-width-auto@s uk-width-5-6">
+                        @@include('template/service-card.html', { "title": "Отопителей" })
+                    </li>
+                </ul>
+            </div>
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin-medium-top dotnav-primary dotnav-primary-light"></ul>
+        </div>
+    </div>
+</div>
+@@include('template/section-callback.html')
+@@include('template/footer.html')

@@ -1,0 +1,179 @@
+// Section
+$section-primary-background: $blue;
+// $section-secondary-background: $main-gray;
+// $section-muted-background: $light-gray-20;
+$section-padding-vertical: 48px;
+$section-padding-vertical-m: 104px;
+$section-large-padding-vertical: 48px;
+$section-large-padding-vertical-m: 120px;
+
+@mixin hook-section-secondary {
+  color: $white;
+
+  .uk-h2, .btn-link:not(:hover) {
+    color: $white;
+  }
+}
+
+// Container
+$container-max-width: 1200px;
+$container-small-max-width: 792px;
+$container-padding-horizontal: 16px;
+$container-padding-horizontal-m: 48px;
+
+// Grid
+$grid-small-gutter-horizontal: 16px;
+$grid-large-gutter-horizontal: 24px;
+$grid-large-gutter-horizontal-l: 48px;
+$grid-gutter-horizontal: 16px;
+$grid-gutter-horizontal-l: 24px;
+$grid-gutter-vertical: 24px;
+$grid-gutter-vertical-l: 24px;
+$grid-medium-gutter-horizontal: 48px;
+$grid-medium-gutter-vertical: 48px;
+
+// Margin
+$base-margin-vertical: 24px;
+$margin-small-margin: 8px;
+$margin-margin: 16px;
+$margin-medium-margin: 24px;
+$margin-large-margin: 32px;
+$margin-large-margin-l: 32px;
+$margin-xlarge-margin: 40px;
+$margin-xlarge-margin-l: 40px;
+
+// Mixins
+@mixin hook-base-h1 {
+  font-weight: $font-weight-semi-bold;
+  line-height: 1.16;
+  margin-top: 0;
+  color: $main-dark-blue;
+  margin-bottom: 16px;
+}
+$base-h1-font-size: 29px;
+$base-h1-font-size-m: 33px;
+
+@mixin hook-base-h2 {
+  font-weight: $font-weight-semi-bold;
+  line-height: 1.16;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: $main-dark-blue;
+}
+$base-h2-font-size: 27px;
+$base-h2-font-size-m: 29px;
+
+@mixin hook-base-h3 {
+  font-weight: $font-weight-semi-bold;
+  margin-top: 0;
+  line-height: 1.16;
+  color: $main-dark-blue;
+}
+
+$base-h3-font-size: 24px;
+
+@mixin hook-base-h4 {
+  font-weight: $font-weight-semi-bold;
+  margin-top: 0;
+  line-height: 1.1;
+  color: $main-dark-blue;
+}
+
+$base-h4-font-size: 20px;
+
+// Button
+@mixin hook-button {
+  display: inline-block;
+  padding: 11px 31px;
+  font-size: 15px;
+  line-height: 1.48;
+  box-sizing: border-box;
+  transition: background-color .3s ease, color .3s ease;
+  border: 1px solid $main-dark-blue;
+  border-radius: 2px;
+}
+
+@mixin hook-button-primary {
+  background-color: $white;
+  color: $main-dark-blue;
+}
+
+@mixin hook-button-primary-hover {
+  background-color: $main-dark-blue;
+  color: $white;
+}
+
+@mixin hook-button-primary-active {
+  background-color: $pressed;
+  color: $white;
+  border-color: $pressed;
+}
+//
+@mixin hook-button-secondary {
+  background-color: $main-dark-blue;
+  color: $white;
+}
+
+@mixin hook-button-secondary-hover {
+  background-color: $hover-bright;
+  color: $white;
+  border-color: $hover-bright;
+}
+
+@mixin hook-button-secondary-active {
+  background-color: $pressed;
+  color: $white;
+  border-color: $pressed;
+}
+//
+@mixin hook-button-disabled {
+  background-color: $gray-30;
+  color: $gray;
+}
+
+// Modal
+@mixin hook-modal-body {
+  border-radius: unset;
+  padding: 32px 32px 24px;
+  background: $white;
+  @media screen and (max-width: 640px) {
+    padding: 24px 16px;
+  }
+}
+
+// Form
+@mixin hook-form-single-line {
+  transition: border-color .3s ease, color .3s ease;
+  background-color: transparent;
+  border: 1px solid $black-60;
+  color: #1E1E1E;
+  border-radius: unset;
+  height: 40px;
+  padding: 0 16px;
+  font-size: 14px;
+}
+
+@mixin hook-form-multi-line {
+  transition: border-color .3s ease, color .3s ease;
+  background-color: transparent;
+  border: 1px solid $black-60;
+  color: #1E1E1E;
+  min-height: 96px;
+  border-radius: unset;
+  padding: 13px 16px;
+  font-size: 14px;
+}
+
+// Offcanvas
+@mixin hook-offcanvas-bar {
+  padding: 0;
+}
+
+$offcanvas-bar-width: 100%;
+$offcanvas-bar-background: $white;
+$offcanvas-bar-width-m: 504px;
+$offcanvas-bar-padding-vertical-m: 0;
+$offcanvas-bar-padding-horizontal-m: 0;
+
+// Accordion
+$accordion-content-margin-top: 0;

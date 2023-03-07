@@ -107,12 +107,30 @@ toMobileAccordion(959, $('.accordion-repair'), $('.accordion-repair .accordion-t
     });
 })();
 
+//  new 
+
 //гамбургер
 (function () {
     var mmenuOpen = () => {
-        $('.menuMenu').addClass('menuMenu-active');
+        $('.catalog-menu').addClass('menuMenu-active');
         $('body').addClass('menuMenu-body');
         $('.menuMenu-overlay').addClass('menuMenu-overlay-act');
+        console.log("открыть каталог меню")
+    };
+    var mmenuHambOpen = () => {
+        $('.header-menu').addClass('menuMenu-active');
+        $('body').addClass('menuMenu-body');
+        
+        $('.menuMenu-overlay').addClass('menuMenu-overlay-act');
+        console.log("открыть хедер меню")
+    };
+
+    var RepairOpen = () => {
+        $('.repair-menu').addClass('menuMenu-active');
+        $('body').addClass('menuMenu-body');
+        
+        $('.menuMenu-overlay').addClass('menuMenu-overlay-act');
+        console.log("открыть хедер меню")
     };
 
     window.mmenuClose = () => {
@@ -122,8 +140,12 @@ toMobileAccordion(959, $('.accordion-repair'), $('.accordion-repair .accordion-t
     };
 
     $('.hamburger').on('click', mmenuOpen);
+    $('.hamburger-menu').on('click', mmenuHambOpen);
+    $('.repair-open').on('click', RepairOpen);
     $('.menuMenu-overlay-close').on('click', mmenuClose);
 })();
+
+//  new 
 
 (function () {
     if ($('.product_image').length) {
@@ -331,3 +353,44 @@ if (document.querySelector('[data-input-check]')) {
         }
     })
 }
+
+
+
+
+function sectionToSlider() {
+    let wv = window.innerWidth;
+    if (wv <= 800) {
+        document.querySelector(".banner-container").classList.add("swiper-wrapper");
+        document.querySelector(".banner-container.swiper-wrapper").classList.remove("banner-container");
+        var swiperBanner = new Swiper(".mobile-banner-slider", {
+            spaceBetween: 16,
+            breakpoints: {
+                801: {
+                    slidesPerView: 3,
+                    grid: {
+                      rows: 2,
+                    },
+                },
+                320: {
+                    slidesPerView: 2,
+                    grid: {
+                    rows: 2,
+                    },
+                }
+            },
+            pagination: {
+                el: '.banner-pagination',
+                type: 'bullets',
+            },
+        });
+    } else {
+        swiperBanner.destroy(deleteInstance, cleanStyles)
+        document.querySelector(".banner-content .swiper-wrapper").classList.add("banner-container");
+        document.querySelector(".banner-container").classList.remove("swiper-wrapper");
+    }
+}
+
+sectionToSlider();
+addEventListener("resize", () => sectionToSlider());
+
+
